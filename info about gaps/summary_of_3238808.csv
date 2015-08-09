@@ -1,0 +1,21 @@
+Elapsed time
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+II
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+417,0,"[[0, 416]]",[417],2.30343789486767e-05
+AVR
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+417,0,"[[0, 416]]",[417],2.30343789486767e-05
+V
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+417,0,"[[0, 416]]",[417],2.30343789486767e-05
+RESP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+285,0,"[[0, 284]]",[285],1.5742920864203497e-05
+PLETH
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+2371735,4,"[[13600625, 13982172], [0, 284], [4179250, 4181596], [9350250, 11332860], [11530125, 11535068]]","[381548, 285, 2347, 1982611, 4944]",0.13101065409074275
+ICP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+285,0,"[[0, 284]]",[285],1.5742920864203497e-05

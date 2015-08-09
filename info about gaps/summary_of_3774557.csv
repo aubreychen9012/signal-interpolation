@@ -1,0 +1,27 @@
+Elapsed time
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+II
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+AVR
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+V
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+RESP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+PLETH
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+30887,2,"[[27250, 28476], [48625, 61884], [766125, 782524]]","[1227, 13260, 16400]",0.0031498865461591415
+ABP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+3678,0,"[[1375, 5052]]",[3678],0.0003750860464523366
+CVP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+ICP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+11020,0,"[[40625, 51644]]",[11020],0.0011238304056293501

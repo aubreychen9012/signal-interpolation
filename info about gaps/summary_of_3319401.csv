@@ -1,0 +1,24 @@
+Elapsed time
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+II
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+816,0,"[[0, 815]]",[816],3.0009791797875225e-05
+AVR
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+816,0,"[[0, 815]]",[816],3.0009791797875225e-05
+V
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+816,0,"[[0, 815]]",[816],3.0009791797875225e-05
+RESP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+550,1,"[[0, 299], [27190875, 27191124]]","[300, 250]",2.0227188099058056e-05
+PLETH
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+419070,6,"[[25764500, 25818635], [26609000, 26644267], [27190875, 27191124], [0, 299], [42000, 43403], [755250, 867115], [2443750, 2659595]]","[54136, 35268, 250, 300, 1404, 111866, 215846]",0.0154120140303132
+ABP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+68893,1,"[[0, 267], [27122500, 27191124]]","[268, 68625]",0.002533657581288012
+ICP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+55369,3,"[[0, 267], [5500, 9771], [26617625, 26668203], [27190875, 27191124]]","[268, 4272, 50579, 250]",0.002036289414284992

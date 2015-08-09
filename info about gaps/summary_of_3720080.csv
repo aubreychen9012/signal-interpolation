@@ -1,0 +1,21 @@
+Elapsed time
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+0,0,0
+II
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+703,2,"[[0, 415], [9072, 9119], [7386125, 7386363]]","[416, 48, 239]",9.517376929688788e-05
+AVR
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+1306,3,"[[0, 415], [9072, 9119], [9125, 9727], [7386125, 7386363]]","[416, 48, 603, 239]",0.00017680930683034932
+V
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+1306,3,"[[0, 415], [9072, 9119], [9125, 9727], [7386125, 7386363]]","[416, 48, 603, 239]",0.00017680930683034932
+RESP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+808,1,"[[0, 443], [7386125, 7386488]]","[444, 364]",0.00010938891264848564
+PLETH
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+968,1,"[[0, 603], [7386125, 7386488]]","[604, 364]",0.00013105008346996793
+ICP
+black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
+808,1,"[[0, 443], [7386125, 7386488]]","[444, 364]",0.00010938891264848564
