@@ -1,0 +1,15 @@
+Channels	median length	in seconds	comments
+I		-		-		missing for most files
+II		532.5		4.26
+III		750		6		
+V		875		7
+AVR		875		7
+ABP		875		7
+RESP		875		7
+PLETH		1250		10
+ICP		875		7
+CVP		1125		9		not used in Matthias' thesis
+ART		2941.5		23.532		only in 6 files
+MCL		875		7
+AVL		-		-
+RAP		2187.5		17.5		only in 10 files
