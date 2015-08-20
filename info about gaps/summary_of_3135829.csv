@@ -1,24 +1,1 @@
-Elapsed time
-black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
-0,0,0
-I
-black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
-6111051,2,"[[0, 11124], [11328, 11503], [12750, 6112499]]","[11125, 176, 6099750]",0.999762944785276
-II
-black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
-2951,3,"[[0, 399], [11125, 12749], [12864, 13039], [4335625, 4336374]]","[400, 1625, 176, 750]",0.0004827811860940695
-III
-black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
-1150,1,"[[0, 399], [4335625, 4336374]]","[400, 750]",0.00018813905930470346
-V
-black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
-1150,1,"[[0, 399], [4335625, 4336374]]","[400, 750]",0.00018813905930470346
-RESP
-black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
-1170,1,"[[0, 419], [4335625, 4336374]]","[420, 750]",0.0001914110429447853
-PLETH
-black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
-10258,1,"[[0, 9507], [4335625, 4336374]]","[9508, 750]",0.001678200408997955
-ICP
-black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion
-22546,1,"[[0, 21795], [4335625, 4336374]]","[21796, 750]",0.003688507157464213
+Elapsed time,,,,,black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion,0,0,0,NA,NA,NAI,,,,,black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion,6111051,2,"[[0, 11124], [11328, 11503], [12750, 6112499]]","[11125, 176, 6099750]",0.999762945,II,,,,,black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion,2951,3,"[[0, 399], [11125, 12749], [12864, 13039], [4335625, 4336374]]","[400, 1625, 176, 750]",0.000482781,III,,,,,black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion,1150,1,"[[0, 399], [4335625, 4336374]]","[400, 750]",0.000188139,V,,,,,black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion,1150,1,"[[0, 399], [4335625, 4336374]]","[400, 750]",0.000188139,RESP,,,,,black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion,1170,1,"[[0, 419], [4335625, 4336374]]","[420, 750]",0.000191411,PLETH,,,,,black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion,10258,1,"[[0, 9507], [4335625, 4336374]]","[9508, 750]",0.0016782,ICP,,,,,black_cnt,gaps,gap_indeces,gap_length,missing_value_proportion,22546,1,"[[0, 21795], [4335625, 4336374]]","[21796, 750]",0.003688507,
