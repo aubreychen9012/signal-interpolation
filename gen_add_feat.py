@@ -51,6 +51,8 @@ def gen_tr_data(rng,active_chl_array):
     tr = active_chl_array[rng[0]-50000-1:rng[0]-1]
     if np.isnan(tr).any():
         idx_isnan = np.isnan(tr)
+        idx = np.arange(len(tr))
+        idx = idx[idx_isnan].tolist()
         idx_start = idx_isnan[-1]
         tr = tr[idx_start:]
         if len(tr)>1e4:
