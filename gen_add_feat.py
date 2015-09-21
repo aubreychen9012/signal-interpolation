@@ -57,8 +57,8 @@ def gen_tr_data(rng,active_chl_array):
         tr = tr[idx_start:]
         if len(tr)>1e4:
             return tr
-        else:
-            return 0
+    else:
+        return 0
 
 def add_feat(rng, active_chl,pf):  ## name of active channel
     active_chl= active_chl
