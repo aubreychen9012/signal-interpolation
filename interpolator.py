@@ -14,8 +14,6 @@ from nolearn.lasagne import NeuralNet
 from nolearn.lasagne import objective
 from nolearn.lasagne import TrainSplit
 
-import sys
-sys.path.append('/Users/aubrey9012/Desktop')
 import preproc
 import gen_add_feat
 import clf
