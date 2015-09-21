@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import sys
 
-sys.path.append('/Users/aubrey9012/Desktop')
 import preproc
 
 
