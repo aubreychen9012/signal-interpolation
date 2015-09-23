@@ -6,7 +6,10 @@ import pandas as pd
 import math
 
 WINDOW_LENGTH = 20
+## window length to be defined specifically for each channel
 
+## down sample data to a certain length, same function as in interpolator.py
+## threshold, desired length to downsample
 def down_sampling(data, threshold):
     idx = np.atleast_2d(np.asarray(range(len(data))))
     data = np.atleast_2d(np.asarray(data))
@@ -54,6 +57,8 @@ def down_sampling(data, threshold):
     sampled.append(data[len(data)-1])  # Always add last
     return sampled
 
+## generate rolling_window of desired length
+## window, window length to roll
 def rolling_window(a, window):
     shape = a.shape[:-1] + (a.shape[-1] - window + 1, window)
     strides = a.strides + (a.strides[-1],)
@@ -85,6 +90,7 @@ def RunningMean(seq,N,M):
         means.append(np.mean(d))     # mean for current window
     return means
 
+## get running global mean of an array
 def RunningGMean(data):
      gmean = []
      l = len(data)
@@ -103,6 +109,7 @@ def estimated_autocorrelation(x):
     result = r/(variance*(np.arange(n, 0, -1)))
     return result
 
+## remove trend, use "lowess" to get better estimated trend for different channel!!
 def detrend(data,degree=10):
         detrended=[None]*degree
         for i in range(degree,len(data)-degree):
@@ -111,6 +118,7 @@ def detrend(data,degree=10):
                 detrended.append(data[i]-chunk)
         return detrended+[None]*degree
 
+## build features for neuralnet interpolator, duplicated function as in interpolator.py
 def build_feat(data, add_feat,window_length=WINDOW_LENGTH,):
      ## use other available channels
      feat_mean = np.nan_to_num(pd.rolling_mean(data,5))
@@ -129,12 +137,20 @@ def build_feat(data, add_feat,window_length=WINDOW_LENGTH,):
      feat = feat.astype('float32')
      return feat
 
+## get target value for neuralnet interpolator, duplicated function as interpolator.py
 def get_target(data,WINDOW_LENGTH):
      target = labels(rolling_window(data,WINDOW_LENGTH))
      target = np.atleast_2d(np.asarray(target)).T
      target = target.astype('float32')
      return target
 
+## predict data with rolling window method for get predicted data of a certain length(lag)
+## x, the first rolling window
+## net, the fitted NeuralNet 
+## add_feat, the additional data from another channel to help prediction, same channel as in build_feat
+## new_append_value, the first predicted value, default: 0, as no predicted data is generated before prediction
+## window_length, same window length as in rolling_window
+## lags, number of predicted values to generate
 def predict_feat(x, net, add_feat,new_append_value=0, window_length=20,lags = 100):
      pos = 0
      res = []
@@ -174,9 +190,12 @@ def predict_feat(x, net, add_feat,new_append_value=0, window_length=20,lags = 10
      res = np.asarray(res).T
      return res
 
+## change dtype to "float32", necessary for NeuralNet class
 def float32(k):
     return np.cast['float32'](k)
 
+## additional class for control NeuralNet learning rate
+## original from tutorials by dnouri
 class AdjustVariable(object):
      def __init__(self, name, start=0.03, stop=0.001):
           self.name = name
@@ -189,6 +208,7 @@ class AdjustVariable(object):
                new_value = float32(self.ls[epoch - 1])
                getattr(nn, self.name).set_value(new_value)
 
+## validation: get mean squared error of original and predicted data
 def MSE(y1,y2):
      if len(y1)!=len(y2):
           print "Length unmatch"
