@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 from joblib import Parallel, delayed
 
-sys.path.append('/Users/aubrey9012/Desktop')
 import preproc
 import training
 
