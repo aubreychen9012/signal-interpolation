@@ -23,6 +23,7 @@ import signal_preproc
 
 ## neuralnet interpolator
 ## input: tr, add_feat_tr, add_feat_pred
+## output: interpolated data for gap
 
 def downsampling(data, threshold):
     idx = np.atleast_2d(np.asarray(range(len(data))))
@@ -192,6 +193,8 @@ class NeuralnetInterpolator:
          return pred_res
          ## if MSE is nan, return 0 and pass it to copypaste
 
+## if neuralnet interpolator doesn't work well, use copypaste interpolator 
+## to get data from before and after the gap to fill in the gap
 class CopyPasteInterpolator:
     def __init__(self,sig):
         if not isinstance(sig,np.ndarray):
@@ -240,7 +243,7 @@ class CopyPasteInterpolator:
         new_sig = np.copy(self.sig)
         return new_sig
 
-
+## main interpolator
 class SignalInterpolator:
      def __init__(self,col,pf,window_length,bool_var):
           self.col = col
