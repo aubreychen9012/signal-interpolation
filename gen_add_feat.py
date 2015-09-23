@@ -4,12 +4,13 @@ import sys
 
 import preproc
 
-
+## discard columns that don't have enough samples before the current gap
 def discard_add_feat(chl,rng):
      if np.isnan(chl[(rng[0]-10000-1):(rng[0]-1)]).any():
           return 1
      else:return 0
 
+## generate data from available channel for training and prediction
 def max_add_feat(active_chl,rng,pf):
     rng = rng
     min_per=1
@@ -46,6 +47,7 @@ def max_add_feat(active_chl,rng,pf):
             addfeat_data = addfeat_data[idx_start:]
     return chl_add, addfeat_data
 
+## generate training data of the active channel
 def gen_tr_data(rng,active_chl_array):
     tr = active_chl_array[rng[0]-50000-1:rng[0]-1]
     if np.isnan(tr).any():
@@ -59,6 +61,7 @@ def gen_tr_data(rng,active_chl_array):
     else:
         return 0
 
+## generate data to pass to neuralnet interpolator
 def add_feat(rng, active_chl,pf):  ## name of active channel
     active_chl= active_chl
     rng = rng
